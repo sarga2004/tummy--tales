@@ -1,0 +1,67 @@
+.edit-blog-container {
+  min-height: 100vh;            /* ✅ fill full screen height */
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #000;
+  background-color: #fff;       /* ✅ white background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* ✅ center the form vertically */
+}
+
+
+.edit-blog-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.edit-blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.edit-blog-form label {
+  font-weight: 600;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.edit-blog-form input,
+.edit-blog-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #333;
+}
+
+.edit-blog-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.edit-blog-form button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-blog-form button:hover {
+  background-color: #333;
+}

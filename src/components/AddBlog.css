@@ -1,0 +1,105 @@
+
+.add-blog-container {
+  padding-top: 250px; 
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 160px;
+  
+}
+
+
+.add-blog-container h1 {
+  color: #d81b60;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 15px;
+}
+
+
+
+.add-blog-form {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.add-blog-form label {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: 500;
+  display: flex; 
+  flex-direction: column;
+}
+
+.add-blog-form input[type="text"],
+.add-blog-form textarea {
+  width: 100%; 
+  padding: 12px;
+  margin-top: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif; 
+  box-sizing: border-box; 
+  background-color: #fff; 
+  color: #333; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-blog-form input[type="text"]:focus,
+.add-blog-form textarea:focus {
+  border-color: #d81b60; 
+  box-shadow: 0 0 0 3px rgba(216, 27, 96, 0.2); }
+
+.add-blog-form textarea {
+  resize: vertical; 
+  min-height: 120px; 
+}
+
+
+.add-blog-form button[type="submit"] {
+  background-color: #28a745; 
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);}
+
+.add-blog-form button[type="submit"]:hover {
+  background-color: #218838;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .add-blog-container {
+    margin: 10px; 
+    padding: 20px;
+  }
+
+  .add-blog-container h1 {
+    font-size: 2em;
+  }
+
+  .add-blog-form label,
+  .add-blog-form input,
+  .add-blog-form textarea,
+  .add-blog-form button {
+    font-size: 0.95em;
+  }
+
+  .add-blog-form button[type="submit"] {
+    padding: 12px 20px;
+  }
+}
